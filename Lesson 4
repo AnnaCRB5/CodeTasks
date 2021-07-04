@@ -1,0 +1,39 @@
+1.
+   #include <iostream>
+using namespace std;
+int main()
+{
+enum SQUARE 
+{
+NOTHING = 0,
+PAWN,
+ROOK,
+KNIGHT,
+BISHOP,
+KING,
+QUEEN
+};
+SQUARE ChessBoard[8] [8] ;
+
+ChessBoard[0][0] = ChessBoard[0][7] = ROOK;
+ChessBoard[7][0] = ChessBoard[7][7] = ROOK;
+
+return 0;
+}
+
+
+
+
+2. Отладка. Что не так в приведенном фрагменте кода?
+ int myNumbers[5] = {0}; 
+myNumbers[5] = 450; // Присваивание значения 450 пятому элементу 
+
+Ответ: 5-ый элемент под индексом [4].
+
+
+3. Отладка. Что не так в приведенном фрагменте кода? 
+int myNumbers[5]; 
+cout « myNumbers[3];
+ 
+ответ:  отсутствует инициализация
+
