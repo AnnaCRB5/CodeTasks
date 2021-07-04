@@ -1,0 +1,57 @@
+Lesson 3
+1.    #include <iostream>
+using namespace std;
+enum YOURCARDS 
+{AGE =43,
+JACK,
+QUEEN,
+KING    
+};
+int main()
+{
+cout <<"Information" <<endl;
+cout <<"Age: " << AGE <<endl;
+cout << "Jack: " <<JACK << endl;
+cout <<"Queen: " << QUEEN <<endl;
+cout <<"King: " <<KING <<endl;
+return 0;
+}
+
+
+2.
+ #include <iostream>
+ int main()
+ {
+ std::cout<< "sizeof int          :"<<sizeof(int)<<std::endl;
+ std::cout <<"sizeof unsigned int :"<<sizeof(unsigned int)<<std::endl;
+ std::cout <<"sizeof long int     :"<<sizeof(long int)<<std::endl;
+ if(sizeof(long int)== sizeof(int)+sizeof(unsigned int)) {
+     std::cout<<"True"<<std::endl;
+ } else{
+    std::cout<<"Error"<<std::endl;  
+ }
+ return 0;
+ }
+
+3. 
+#include <iostream>
+using namespace std;
+int main()
+{
+double R,S,P;
+double pi=3.1415926;
+cout<<"Введите радиус окружности: ";
+cin>>R;
+P=2*pi*R;
+cout<<"Пeриметр круга с заданным радиусом = "<<P<<"mm"<<endl;
+S=pi*R*R;
+cout<<"Площадь круга с заданным радиусом = "<<S<<"mm"<<endl;
+return 0;
+}
+
+4. Что будет, если в коде упражнения 3 площадь и периметр хранить в целочисленных переменных, а результат — в переменойн любого другого типа?
+
+Ответ:   Дробная чисть числа не будут выводится на экран.
+5. 5. Отладка. Что неверно в следующей инициализации?
+ auto Integer; 
+Ответ: Использование ключевого слова au to требует инициализации переменной, поскольку компилятор нуждается в инициализирующем значении, чтобы принять решение о наилучшем типе для переменной. Если вы не инициализируете переменную, то применение ключевого слова au to приведет к ошибке при компиляции.
